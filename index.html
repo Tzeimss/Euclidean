@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Remainder Left Behind</title>
+  <meta name="description" content="An interactive Euclidean algorithm experience for learning and calculating the greatest common factor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+  <div class="page-shell">
+    <header class="site-header glass-panel">
+      <a class="brand interactive" href="index.html" aria-label="No Remainder Left Behind home">
+        <img src="assets/images/cheetah-logo.svg" alt="Orange cheetah logo">
+        <div>
+          <span>No Remainder Left Behind</span>
+          <small>Euclidean algorithm, reimagined</small>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="interactive" href="index.html">Home</a>
+        <a class="interactive" href="pages/about.html">CTA Page</a>
+        <a class="button button-ghost interactive" href="pages/calculator.html">Calculator</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Black / green / mathematical motion</p>
+          <h1>Master the GCF with the speed of the Euclidean algorithm.</h1>
+          <p class="hero-text">Explore a bold learning space inspired by modern product sites, then jump into an interactive calculator that shows every division step until no remainder is left behind.</p>
+          <div class="hero-actions">
+            <a class="button interactive" href="pages/calculator.html">Launch Calculator</a>
+            <a class="button button-ghost interactive" href="pages/about.html">Learn the Story</a>
+          </div>
+          <div class="stats-grid">
+            <article class="glass-panel stat-card interactive">
+              <strong>GCF Solver</strong>
+              <span>Fast, step-by-step Euclidean recursion</span>
+            </article>
+            <article class="glass-panel stat-card interactive">
+              <strong>Animated UI</strong>
+              <span>Scroll reveals, card flips, and responsive motion</span>
+            </article>
+            <article class="glass-panel stat-card interactive">
+              <strong>Learn &amp; Build</strong>
+              <span>History, definition, and do-it-yourself walkthroughs</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="video-card glass-panel interactive">
+            <div class="video-card-header">
+              <span>Hero Lesson</span>
+              <span class="status-dot">Live learning</span>
+            </div>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/yHwneN6zJmU?si=wdDq8jRd--tvbIQM"
+                title="How to solve the Euclidean algorithm"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <div class="equation-orbit" aria-hidden="true">
+            <span>x = qy + r</span>
+            <span>gcd(a,b)=gcd(b,r)</span>
+            <span>r &lt; b</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section concept-grid">
+        <article class="glass-panel concept-card reveal interactive">
+          <p class="eyebrow">How it works</p>
+          <h2>Divide. Remainder. Repeat.</h2>
+          <p>Each round replaces the original pair with the divisor and remainder, shrinking the problem until the remainder becomes zero.</p>
+        </article>
+        <article class="glass-panel concept-card reveal interactive">
+          <p class="eyebrow">Why it matters</p>
+          <h2>Efficient for huge numbers</h2>
+          <p>The Euclidean algorithm is one of the oldest and smartest tools in mathematics, still powering modern computing, cryptography, and number theory.</p>
+        </article>
+        <article class="glass-panel concept-card reveal interactive">
+          <p class="eyebrow">What you get</p>
+          <h2>Full solution pop-up</h2>
+          <p>Use the calculator to instantly see the GCF and every division statement used to reach the final answer.</p>
+        </article>
+      </section>
+
+      <section class="section feature-showcase">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Interactive learning</p>
+          <h2>Mathematics with motion, depth, and personality.</h2>
+        </div>
+        <div class="showcase-grid">
+          <article class="flip-card reveal interactive">
+            <div class="flip-card-inner">
+              <div class="flip-card-face flip-front glass-panel">
+                <h3>Visual Logic</h3>
+                <p>See formulas orbit, pulse, and respond as you scroll.</p>
+              </div>
+              <div class="flip-card-face flip-back glass-panel">
+                <p>The whole site uses layered gradients, glowing geometry, and animated patterns to keep the math alive.</p>
+              </div>
+            </div>
+          </article>
+          <article class="flip-card reveal interactive">
+            <div class="flip-card-inner">
+              <div class="flip-card-face flip-front glass-panel">
+                <h3>Guided Discovery</h3>
+                <p>Start with the video and move into deeper explanations.</p>
+              </div>
+              <div class="flip-card-face flip-back glass-panel">
+                <p>The CTA page adds clear definitions and an animated historical timeline to build understanding before calculation.</p>
+              </div>
+            </div>
+          </article>
+          <article class="flip-card reveal interactive">
+            <div class="flip-card-inner">
+              <div class="flip-card-face flip-front glass-panel">
+                <h3>Instant Action</h3>
+                <p>A dedicated calculator page keeps the solving experience focused.</p>
+              </div>
+              <div class="flip-card-face flip-back glass-panel">
+                <p>Every button is live, responsive, and enhanced with hover, click, and ripple motion.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-banner glass-panel reveal">
+        <div>
+          <p class="eyebrow">Call to action</p>
+          <h2>Ready to leave no remainder behind?</h2>
+          <p>Learn the origins of the algorithm, then test any two integers in the calculator and watch the solution unfold.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button interactive" href="pages/about.html">Explore the CTA Page</a>
+          <a class="button button-ghost interactive" href="pages/calculator.html">Open the Calculator</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer glass-panel">
+      <p>Built for curious learners, coders, and anyone who wants the GCF to feel exciting.</p>
+      <div class="footer-links">
+        <a class="interactive" href="index.html">Home</a>
+        <a class="interactive" href="pages/about.html">Definition &amp; History</a>
+        <a class="interactive" href="pages/calculator.html">Calculator</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
