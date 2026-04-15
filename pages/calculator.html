@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Remainder Left Behind | Calculator</title>
+  <meta name="description" content="Calculate the GCF using the Euclidean algorithm with a step-by-step solution popup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="calculator">
+  <div class="page-shell">
+    <header class="site-header glass-panel">
+      <a class="brand interactive" href="../index.html" aria-label="No Remainder Left Behind home">
+        <img src="../assets/images/cheetah-logo.svg" alt="Orange cheetah logo">
+        <div>
+          <span>No Remainder Left Behind</span>
+          <small>Euclidean algorithm, reimagined</small>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="interactive" href="../index.html">Home</a>
+        <a class="interactive" href="about.html">CTA Page</a>
+        <a class="button button-ghost interactive" href="calculator.html">Calculator</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero calculator-hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Euclidean calculator</p>
+          <h1>Find the GCF with a vivid, step-by-step mathematical engine.</h1>
+          <p class="hero-text">Enter any two integers and watch the algorithm reduce them through successive division until the remainder reaches zero.</p>
+        </div>
+
+        <div class="math-canvas glass-panel reveal interactive" aria-hidden="true">
+          <div class="equation-stack">
+            <span>a = bq + r</span>
+            <span>84 = 30(2) + 24</span>
+            <span>30 = 24(1) + 6</span>
+            <span>24 = 6(4) + 0</span>
+          </div>
+          <div class="floating-shape shape-one"></div>
+          <div class="floating-shape shape-two"></div>
+          <div class="floating-shape shape-three"></div>
+        </div>
+      </section>
+
+      <section class="section calculator-layout">
+        <article class="glass-panel calculator-panel reveal">
+          <p class="eyebrow">Interactive form</p>
+          <h2>Calculate the greatest common factor.</h2>
+          <form id="gcd-form" class="gcd-form">
+            <label for="first-number">First number</label>
+            <input id="first-number" name="first-number" type="number" inputmode="numeric" placeholder="Enter an integer" required>
+
+            <label for="second-number">Second number</label>
+            <input id="second-number" name="second-number" type="number" inputmode="numeric" placeholder="Enter another integer" required>
+
+            <div class="form-actions">
+              <button class="button interactive" type="submit">Calculate GCF</button>
+              <button class="button button-ghost interactive" type="button" id="randomize-btn">Try Sample Numbers</button>
+            </div>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </article>
+
+        <aside class="glass-panel side-panel reveal interactive">
+          <p class="eyebrow">What you’ll see</p>
+          <ul class="feature-list">
+            <li>Instant GCF result</li>
+            <li>Division statements for every Euclidean step</li>
+            <li>Animated popup explanation</li>
+            <li>Responsive visual feedback on click and hover</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer glass-panel">
+      <p>Input two numbers. Let the remainders tell the story.</p>
+      <div class="footer-links">
+        <a class="interactive" href="../index.html">Home</a>
+        <a class="interactive" href="about.html">CTA Page</a>
+        <a class="interactive" href="calculator.html">Calculator</a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="result-modal" aria-hidden="true">
+    <div class="modal glass-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close interactive" id="close-modal" type="button" aria-label="Close result popup">×</button>
+      <p class="eyebrow">Solution popup</p>
+      <h2 id="modal-title">Euclidean Algorithm Result</h2>
+      <p id="modal-summary" class="modal-summary"></p>
+      <div id="solution-steps" class="solution-steps"></div>
+    </div>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/calculator.js"></script>
+</body>
+</html>
